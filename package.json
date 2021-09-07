@@ -1,11 +1,19 @@
 {
   "name": "golfscore1",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "onchange \"css/*.scss\" -- npm run sass",
+    "sass": "node-sass --output-style compressed -o css/ css/ --source-map true"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "onchange": "^7.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3"
+  }
 }
