@@ -58,7 +58,7 @@
     <div class="inputfield d-flex justify-content-center">
         <input class="bg-secondary rounded-3 border-black text-center fs-3" type="text" id="total" value="0" disabled=""/>
     </div>
-    <a href="golfscore.php" class="d-flex justify-content-center text-decoration-none my-3 mb-3">
+    <a href="golfscore.php" class="d-flex justify-content-center text-decoration-none my-4">
         <button class="bg-lilla rounded-3 border-black fs-3">Start forfra</button>
     </a>
 
