@@ -8,12 +8,20 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "node-sass": "^6.0.1",
     "onchange": "^7.1.0"
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeamAn93/GolfApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SeamAn93/GolfApp/issues"
+  },
+  "homepage": "https://github.com/SeamAn93/GolfApp#readme",
+  "description": ""
 }
