@@ -11,35 +11,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="bg-gul">
-    <div class="d-flex justify-content-center">
-    <button type="button" class="bg-primary text-white rounded-3 border-black fs-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Start spil
-    </button>
-    </div>
-
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-3">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Start spil</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <p class="mb-1">Dit navn:</p>
-                    <input class="inputname mb-4" placeholder="Anders">
+                    <input class="inputname bg-secondary rounded-3 mb-4" placeholder="Anders">
                     <p class="mb-1">Antal huller:</p>
-                    <input class="inputholes mb-4" placeholder="5">
+                    <input class="inputholes bg-secondary rounded-3 mb-4" placeholder="5" value="">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Luk</button>
-                    <button type="button" class="start btn btn-primary" data-bs-dismiss="modal">Start</button>
+                    <button type="button" class="btn btn-danger rounded-3 border-black" data-bs-dismiss="modal">Luk</button>
+                    <button type="button" class="start makelist rounded-3 border-black btn btn-primary" data-bs-dismiss="modal">Start</button>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="makelist d-flex justify-content-center">
-        <button class="bg-primary text-white rounded-3 border-black fs-3">tilføj hul</button>
     </div>
 
     <h1 class="text-center mb-4 pt-2 fw-bold">Golf score</h1>
@@ -51,13 +41,12 @@
         <input class="bg-secondary rounded-3 border-black text-center fs-3" type="text" id="total" value="0" disabled=""/>
     </div>
 
-    <div class="reload d-flex justify-content-center text-decoration-none my-4">
-        <button class="bg-lilla rounded-3 border-black fs-3">Start forfra</button>
+    <div class="d-flex justify-content-center my-4">
+        <button type="button" class="btn__size bg-primary text-white rounded-3 border-black fs-3 me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Start spil</button>
+        <button class="reload btn__size bg-danger text-white rounded-3 border-black fs-3">Start forfra</button>
     </div>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script type="module" src="js/app.js"></script>
 </body>
 </html>
-
-

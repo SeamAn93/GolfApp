@@ -88,7 +88,8 @@ function getName (){
 let startGame = document.querySelector('.start');
 
 startGame.addEventListener('click', (e) => {
-    getName();
+    getName(e);
+    getHoles();
 })
 
 // Tilføj huller
@@ -96,5 +97,8 @@ startGame.addEventListener('click', (e) => {
 let inputHoles = document.querySelector('.inputholes');
 
 function getHoles () {
-    const holes =
+        for (let x = 1; x < inputHoles.value; x++){
+        listMaker();
+
+    }
 }
